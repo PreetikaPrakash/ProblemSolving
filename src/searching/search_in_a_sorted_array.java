@@ -9,7 +9,7 @@ public class search_in_a_sorted_array {
         int low,high=0;
         low=0;
         high=N-1;
-        while(low<high) {
+        while(low<=high) {
             int mid = (low + high) / 2;
             if (arr[mid] == K) {
                 return 1;
