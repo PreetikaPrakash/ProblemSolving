@@ -27,16 +27,42 @@ public class bunnyEars {
         }
     }
 
+    public int prod = 0;
+    public int recursive_bunnyEarsTwo(int bunnies) {
+        int count = 0;
+        count = prod;
+        if (bunnies == 0) {
+            prod = 0;
+            return count;
+        } else {
+            prod = prod + 2;
+            return recursive_bunnyEarsTwo(bunnies - 1);
+        }
+    }
+
     public static void main(String[] args){
         bunnyEars f = new bunnyEars();
         int n = 5;//10
         int m = 8;//16
+        int a = 0;
+        int b = 1;
+        int c = 2;
+        int d = 3;
 
         int q= f.iterative_bunnyEars(n);
         System.out.println("iterative "+ q);
 
         q= f.recursive_bunnyEars(m);
         System.out.println("recursive "+ q);
+
+        q= f.recursive_bunnyEarsTwo(a);
+        System.out.println("a "+ q);
+        q= f.recursive_bunnyEarsTwo(b);
+        System.out.println("b "+ q);
+        q= f.recursive_bunnyEarsTwo(c);
+        System.out.println("c "+ q);
+        q= f.recursive_bunnyEarsTwo(d);
+        System.out.println("d "+ q);
     }
 }
 
@@ -44,4 +70,8 @@ public class bunnyEars {
 /*
 iterative 10
 recursive 16
+a 0
+b 2
+c 6
+d 12
 */
