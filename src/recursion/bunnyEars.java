@@ -39,6 +39,14 @@ public class bunnyEars {
             return recursive_bunnyEarsTwo(bunnies - 1);
         }
     }
+    public int recursive_bunnyEarsThree(int n){
+        if(n==0){
+            return 0;
+        }
+        else {
+            return recursive_bunnyEarsThree(n-1) + 2;
+        }
+    }
 
     public static void main(String[] args){
         bunnyEars f = new bunnyEars();
@@ -48,21 +56,25 @@ public class bunnyEars {
         int b = 1;
         int c = 2;
         int d = 3;
+        int p = 4;
 
         int q= f.iterative_bunnyEars(n);
-        System.out.println("iterative "+ q);
+        System.out.println("iterative "+ q); //10
 
         q= f.recursive_bunnyEars(m);
-        System.out.println("recursive "+ q);
+        System.out.println("recursive function one"+ q); // 16
 
         q= f.recursive_bunnyEarsTwo(a);
-        System.out.println("a "+ q);
+        System.out.println("recursive function two a "+ q);// 0
         q= f.recursive_bunnyEarsTwo(b);
-        System.out.println("b "+ q);
+        System.out.println("recursive function two b "+ q);// 2
         q= f.recursive_bunnyEarsTwo(c);
-        System.out.println("c "+ q);
+        System.out.println("recursive function two c "+ q); // 4
         q= f.recursive_bunnyEarsTwo(d);
-        System.out.println("d "+ q);
+        System.out.println("recursive function two d "+ q); //6
+
+        q=f.recursive_bunnyEarsThree(p);
+        System.out.println("recursive function three "+ q); // 8
     }
 }
 
@@ -74,4 +86,5 @@ a 0
 b 2
 c 6
 d 12
+8
 */
