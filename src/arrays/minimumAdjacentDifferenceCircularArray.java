@@ -3,10 +3,10 @@ package arrays;
 public class minimumAdjacentDifferenceCircularArray {
     public static int minAdjDiff(int arr[], int n) {
         int min = arr[n-1] - arr[0];
-        min = Math.abs(min);
+        min = Math.abs(min); // imp
         for(int i=0;i<n-1;i++){
             int cal = arr[i] - arr[i+1];
-            cal = Math.abs(cal);
+            cal = Math.abs(cal); // imp
             System.out.print(cal+" ");
             if(cal<min){
                 min = cal;
@@ -22,5 +22,6 @@ public class minimumAdjacentDifferenceCircularArray {
         int arr1[] = new int[]{10,-3,-4,7,6,5,-4,-1};
         y = minAdjDiff(arr1,8);
         System.out.println(y);
+
     }
 }
