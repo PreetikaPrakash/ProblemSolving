@@ -20,6 +20,7 @@ public class leadersInArray {
     }
 
     public static void main(String[] args) {
+
         ArrayList<Integer> aw;
         int arr[] ={16,17,4,3,5,2};
         aw = leaders(arr,6);
@@ -43,6 +44,9 @@ public class leadersInArray {
 
         int arr5[] ={23, 22, 28, 20, 0};
         aw = leaders(arr5,5);
+        System.out.println(aw);
+        int arr6[] ={7,10,4,10,6,5,2};
+        aw = leaders(arr6,7);
         System.out.println(aw);
 
 
