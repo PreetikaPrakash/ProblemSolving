@@ -46,7 +46,6 @@ public class maxAndSecondMax {
         return ar;
     }
 
-
     public static void main(String[] args) {
         ArrayList<Integer> a = largestAndSecondLargest(3, new int[]{2,1,2});
         System.out.println(a);
