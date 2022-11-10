@@ -15,10 +15,13 @@ public class prefixSum {
             cal = cal + A[i];
             sum[i] = cal;
         }
+        
         if(l!=0) {
             return sum[r] - sum[l - 1];
         }
-        else{
+        else
+            // Edge Case when l==0
+        {
             return sum[r];
         }
     }
