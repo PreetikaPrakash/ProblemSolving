@@ -1,4 +1,7 @@
 package searching;
+// Iterative binary search is better than recursive binary search becuase of less auxillary space
+// Time Complexity = O(logn)
+// Space Complexity = O(1)
 // arr = {10,20,30,40,50,60,70,80,90,100}
 // iterative approach
 public class binarySearch {
@@ -12,7 +15,6 @@ public class binarySearch {
             } else if (arr[mid] > x) {
                 r = mid - 1;
             }
-
         }
         return -1;
     }
@@ -22,7 +24,9 @@ public class binarySearch {
         int arr[]={10,20,30,40,50,60,70,80,90,100};
         int l = arr[0];
         int r = arr[arr.length-1];
-        int result = bs.checkArr(arr,40,0,arr.length);
+        int result = bs.checkArr(arr,25,0,arr.length);
         System.out.println(result);
     }
 }
+// check for 40 -> 3
+// check for 25 -> -1
