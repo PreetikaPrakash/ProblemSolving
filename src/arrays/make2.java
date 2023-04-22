@@ -36,7 +36,7 @@ public class make2 {
         int arr8[] = make2(arr3, arr4);
         int arr9[] = make2(arr5,arr6);
         for(int i = 0 ; i<2;i++){
-            System.out.printf("%d ",arr7[i]);
+            System.out.printf("%d    ",arr7[i]);
         }
         System.out.println();
 
