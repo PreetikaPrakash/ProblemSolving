@@ -31,3 +31,11 @@ public class arrayofObjects {
 
     }
 }
+/*
+OUTPUT
+Jade likes yellow color.
+Joan likes red color.
+Jacob likes brown color.
+Jen likes pink color.
+Jack likes mauve color.
+*/
