@@ -1,5 +1,5 @@
 package arrays;
-
+// Submitted in GFG
 public class sortarrayof0s1s2s {
     public static void sort012(int a[], int n)
     {
