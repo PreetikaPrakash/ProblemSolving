@@ -17,7 +17,7 @@ public class arraySubsetofAnotherArray {
                 flag=true;
             }
             else{
-                flag = false;
+                flag  = false;
                 continue;
             }
             if(j==m-1){
