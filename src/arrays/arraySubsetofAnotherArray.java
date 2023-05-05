@@ -1,41 +1,37 @@
+// pre-requisite
+/**
+ * we just have to check arr2 is a subset of arr1 or not
+ * Expected Time Complexity : O(n)
+ * Expected Space Complexity : O(n)
+ */
 package arrays;
-
 import java.util.Arrays;
-
 public class arraySubsetofAnotherArray {
-
-    public static boolean binarySearch(long[] a1, long value, long low, long high) {
-        while (low <= high) {
-            int mid = (int) ((low + high) / 2);
-            if (value == a1[mid]) {
-                return true;
-            }
-            if (value > a1[mid]) {
-                low = mid + 1;
-            }
-            if (value < a1[mid]) {
-                high = mid - 1;
-            }
-        }
-        return false;
-    }
     public String isSubset(long[] a1, long[] a2, long n, long m) {
-        boolean ans = true;
-        int j=0;
         Arrays.sort(a1);
-        while(ans && j<m){
-            ans = arraySubsetofAnotherArray.binarySearch(a1,a2[j],0,n);
-            j++;
+        Arrays.sort(a2);
+        int j = 0;
+        boolean flag = true;
+        for(int i=0;i<n;i++){
+            if(a2[j]==a1[i]){
+                flag=true;
+            }
+            else{
+                flag = false;
+                continue;
+            }
+            if(j==m-1){
+                return "Yes";
+            }
+            else{
+                j++;
+            }
         }
-        String anss = "";
-        anss = anss + ans;
-        return anss;
-
+        return "No";
     }
-
     public static void main(String[] args) {
         arraySubsetofAnotherArray as = new arraySubsetofAnotherArray();
-        String h = as.isSubset(new long[]{11, 1, 13, 21, 3, 7}, new long[]{11, 3, 7, 1}, 6,4 );
+        String h = as.isSubset(new long[]{8,4,5,3,1,7,9}, new long[]{5,1,3,7,9}, 7,5 );
         System.out.println(h);
     }
 }
