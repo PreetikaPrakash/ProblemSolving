@@ -1,5 +1,5 @@
 // Time Complexity : O(n)
-// Space Complexity : O(n)
+// Space Complexity : O(n+k)
 package sorting;
 
 import java.util.Arrays;
