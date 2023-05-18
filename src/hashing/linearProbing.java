@@ -40,10 +40,11 @@ public class linearProbing {
         Insert(HT,25);
         Insert(HT,35);
         Insert(HT,26);
+        System.out.println(Arrays.toString(HT));
+        // OUTPUT - [0, 0, 12, 0, 0, 25, 35, 26, 0, 0]
         int ss = Search(HT,35);
         System.out.println("Key 35 found at "+ ss);
-        // OUTPUT
-        // Key 35 found at 6
+        // OUTPUT - Key 35 found at 6
 
     }
 }
