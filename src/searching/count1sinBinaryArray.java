@@ -21,7 +21,7 @@ public class count1sinBinaryArray {
                 return N-mid;
             }
             else{
-                while(arr[mid-1]==1 && mid-1>0){
+                while(arr[mid-1]==1 && mid>0){
                     mid = mid - 1;
                 }
                 return N-mid;
@@ -32,10 +32,10 @@ public class count1sinBinaryArray {
     }
     public static void main(String[] args) {
         int[] arr1 = new int[]{1,1,1,1,1,1,1,1};// 8
-        int[] arr2 = new int[]{0,0,1,1,1,1,1,1};// 6
-        int[] arr3 = new int[]{0,0,0,0,0,1,1,1};// 3
-        int[] arr4 = new int[]{0,0,0,0,0,0,1,1};// 2
-        int[] arr5 = new int[]{0,0,0,0,1,1,1,1};//4
+        int[] arr2 = new int[]{1,1,1,1,1,1,0,0};// 6
+        int[] arr3 = new int[]{1,1,1,0,0,0,0,0};// 3
+        int[] arr4 = new int[]{1,1,0,0,0,0,0,0};// 2
+        int[] arr5 = new int[]{1,1,1,1,0,0,0,0};//4
         System.out.println(countOnes(arr3, arr3.length));
         System.out.println(countOnes(arr4, arr4.length));
         System.out.println(countOnes(arr5, arr5.length));
