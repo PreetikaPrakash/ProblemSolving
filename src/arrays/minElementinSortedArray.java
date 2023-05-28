@@ -34,3 +34,6 @@ public class minElementinSortedArray {
         System.out.println(findMin(arr,n));
     }
 }
+
+// OUTPUT
+//5
