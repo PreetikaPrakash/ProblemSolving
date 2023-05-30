@@ -1,5 +1,4 @@
 package strings;
-
 public class checkStringIsogram {
     public static int checkIsogram(String str, int n){
         int[] char_hash = new int[26+1];
@@ -14,7 +13,6 @@ public class checkStringIsogram {
                 flag = true;
             }
         }
-
         if(flag==true){return 0;}
         else{return 1;}
     }
@@ -23,7 +21,6 @@ public class checkStringIsogram {
         String str2 = "geeks";
         System.out.println(checkIsogram(str1,str1.length()));
         System.out.println(checkIsogram(str2,str2.length()));
-
     }
 }
 // OUTPUT
