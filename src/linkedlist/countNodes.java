@@ -54,3 +54,14 @@ public class countNodes {
         System.out.println("Count of nodes is --- Recursively "+ recurcountofNodes(cn));
     }
 }
+
+// OUTPUT
+/*
+2
+5
+3
+7
+8
+Count of nodes is --- Iteratively 5
+Count of nodes is --- Recursively 5
+*/
