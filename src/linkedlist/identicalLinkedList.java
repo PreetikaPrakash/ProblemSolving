@@ -39,3 +39,9 @@ public class identicalLinkedList {
         return true;
     }
 }
+
+/* INPUT
+        LinkedList1: 1->2->3->4->5->6
+        LinkedList2: 99->59->42->20
+        Output: Not identical
+*/
