@@ -3,6 +3,9 @@ package linkedlist;
 // INSERT BEFORE INDEX 3
 // INSERT AT INDEX 2
 // INSERT AFTER INDEX 4
+// INSERT AT LAST
+// DELETE INDEX 4
+// CHECK LL SORTED OR NOT
 
 class insertNode{
     int data;
@@ -64,6 +67,39 @@ public class inserting {
         ia_newNode.next = ia_head.next;
         ia_head.next=ia_newNode;
     }
+    static void insertLast(int element){
+        insertNode il_head = tail;
+        insertNode il_newNode = new insertNode(element,null);
+        while(il_head.next!=null){
+            il_head = il_head.next;
+        }
+        il_head.next=il_newNode;
+    }
+
+    static void deleteIndex(int position){
+        insertNode del_head = tail;
+        insertNode del_tail = del_head;
+        for(int i=1;i<position;i++){
+            del_tail = del_head;
+            del_head = del_head.next;
+        }
+        del_tail.next = del_head.next;
+    }
+
+    static boolean checkSorted(){
+        insertNode check = tail;
+        insertNode check_head = tail;
+        insertNode check_tail = check_head;
+
+        while(check.next!=null){
+            check_tail=check_head;
+            check_head = check_head.next;
+            if(check_tail.data>check_head.data){
+                return false;
+            }
+        }
+        return true;
+    }
 
     public static void main(String[] args) {
         insert(90);
@@ -87,6 +123,20 @@ public class inserting {
         insertBefore(3,11);
         display();
 
+        System.out.println("\nINSERT AT LAST");
+        insertLast(100);
+        display();
+
+        System.out.println("\nDELETE INDEX 4");
+        deleteIndex(4);
+        display();
+
+        System.out.println("\nCHECK LL SORTED OR NOT");
+        if(checkSorted()){
+            System.out.println("Sorted");}
+        else{
+            System.out.println("Not Sorted");}
+
     }
 }
 /* OUTPUT
@@ -105,4 +155,12 @@ INSERT AFTER INDEX 4
 INSERT AT INDEX 3
 70 | 90 | 11 | 30 | 55 | 33 | 22 | 60 |
 
+INSERT AT LAST
+70 | 90 | 11 | 30 | 55 | 33 | 22 | 60 | 100 |
+
+DELETE INDEX 4
+70 | 90 | 11 | 55 | 33 | 22 | 60 | 100 |
+
+CHECK LL SORTED OR NOT
+Not Sorted
 * */
