@@ -117,3 +117,14 @@ public class searchingLinkedList {
         searchOPT(1);
     }
 }
+/*OUTPUT
+5 | 30 | 15 | 7 | 1 |
+---Iterative search---
+Element is found
+
+---Recursive search---
+Element not found
+
+---Optimized search---
+1 | 5 | 30 | 15 | 7 |
+ */
