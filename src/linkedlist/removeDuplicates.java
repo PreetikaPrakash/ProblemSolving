@@ -1,5 +1,5 @@
 package linkedlist;
-
+// two pointers will be used.
 class removeNode{
     int data;
     removeNode next;
