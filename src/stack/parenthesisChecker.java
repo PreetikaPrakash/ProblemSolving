@@ -25,7 +25,7 @@ public class parenthesisChecker {
             stack.top++;
         }
         else{
-            System.out.println("Stack Overflow");
+            System.out.println("StackOverflow");
         }
     }
 
