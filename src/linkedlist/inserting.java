@@ -75,6 +75,37 @@ public class inserting {
         }
         il_head.next=il_newNode;
     }
+    static void insertMid(int data){
+        insertNode nm = head;
+        int count = 0;
+        while(nm!=null){
+            count++;
+            nm = nm.next;
+        }
+
+
+        insertNode nq = head;
+        insertNode gq = new insertNode(data,null);
+        int c =1;
+        while(nq!=null){
+            if(c==count/2){
+                gq.next = nq.next;
+                nq.next = gq;
+            }
+            else{
+                c++;//1
+                nq=nq.next;
+            }
+
+        }
+        insertNode disp1 = tail;
+        while(disp1!=null){
+            System.out.print(disp1.data+" | ");
+            disp1 = disp1.next;
+        }
+        System.out.println();
+    }
+
 
     static void deleteIndex(int position){
         insertNode del_head = tail;
@@ -107,6 +138,7 @@ public class inserting {
         insert(22);
         insert(60);
         display();
+
 
         System.out.println("\nINSERT BEFORE INDEX 3");
         insertBefore(3,55);
