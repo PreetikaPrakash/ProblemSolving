@@ -104,3 +104,21 @@ public class implementStackusingArray {
         System.out.println("element at 2nd position  = "+ peek(2));
     }
 }
+/*
+OUTPUT
+34
+24
+14
+40
+4
+poped out element is = 34
+stack top is = 24
+is stack empty = false
+is stack full = false
+24
+14
+40
+4
+element at 2nd position  = 14
+
+*/
