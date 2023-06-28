@@ -9,11 +9,6 @@ public class reaarangeArrayAlternately {
         int ii=0;
 
         while(left<right){
-//            long temp = arr[right];
-//            arr[right] = arr[left];
-//            arr[left] = temp;
-//            System.out.print(arr[right]+ " ");
-//            System.out.print(arr[left]+ " ");
             arrnew[ii++]=arr[right];
             arrnew[ii++]=arr[left];
             right--;
