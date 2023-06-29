@@ -35,5 +35,22 @@ public class insertinMiddle {
         }
 
 
+/*
+Input:
+LinkedList = 1->2->4
+key = 3
+Output: 1 2 3 4
+Explanation: The new element is inserted
+after the current middle element in the
+linked list.
 
+Input:
+LinkedList = 10->20->40->50
+key = 30
+Output: 10 20 30 40 50
+Explanation: The new element is inserted
+after the current middle element in the
+linked list and Hence, the output is
+10 20 30 40 50.
+* */
 }
