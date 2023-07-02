@@ -73,3 +73,7 @@ public class infixToPostfix {
     }
 
 }
+
+/*OUTPUT
+Postfix expression is [A, B, *, C, D, /, +, #]
+* */
