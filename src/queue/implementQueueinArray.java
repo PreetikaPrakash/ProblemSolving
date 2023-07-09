@@ -113,7 +113,7 @@ public class implementQueueinArray {
         System.out.println("Adding one more element 1000 --> queue full message should display");
         enqueueArray(1000);
         display();
-        System.out.println("\n*******************");
+        System.out.println("\n************************");
     }
 }
 /*OUTPUT
