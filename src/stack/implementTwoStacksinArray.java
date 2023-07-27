@@ -13,7 +13,6 @@ public class implementTwoStacksinArray {
             top2 = size;
         }
 
-        //Function to push an integer into the stack1.
         void push1(int x) {
             top1++;
             arr[top1] = x;
