@@ -14,6 +14,7 @@ public class queueUsingTwoStacks {
 
     //Function to push an element in queue by using 2 stacks.
     void Push(int x) {
+
         s1.add(x);
     }
 
