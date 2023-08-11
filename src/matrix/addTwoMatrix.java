@@ -19,7 +19,8 @@ public class addTwoMatrix {
             result = new int[1][1];
             result[0][0] = -1;
         }
-        return result;
+        int[][] h = result;
+        return h;
     }
 }
 
