@@ -110,3 +110,38 @@ public class implementBinaryTree {
             }
     }
 }
+
+/*OUTPUT
+
+Enter root node
+5
+Enter left child of parent node=  5
+8
+Enter right child of parent node=  5
+6
+Enter left child of parent node=  8
+-1
+Enter right child of parent node=  8
+9
+Enter left child of parent node=  6
+3
+Enter right child of parent node=  6
+-1
+Enter left child of parent node=  9
+4
+Enter right child of parent node=  9
+2
+Enter left child of parent node=  3
+-1
+Enter right child of parent node=  3
+-1
+Enter left child of parent node=  4
+-1
+Enter right child of parent node=  4
+-1
+Enter left child of parent node=  2
+-1
+Enter right child of parent node=  2
+-1
+
+*/
