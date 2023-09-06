@@ -79,3 +79,24 @@ public class minimumElementinBST {
 
     }
 }
+
+/*
+Input:
+           5
+         /    \
+        4      6
+       /        \
+      3          7
+     /
+    1
+Output: 1
+
+Input:
+             9
+              \
+               10
+                \
+                 11
+Output: 9
+
+* */
