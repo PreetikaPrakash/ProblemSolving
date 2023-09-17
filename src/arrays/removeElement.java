@@ -20,7 +20,7 @@ public class removeElement {
             int[] nums = new int[]{0,1,2,2,3,0,4,2};
         int k = removeElement(nums, 2);
         for(int i = 0;i<k;i++){
-            System.out.print(nums[i]+ " ");
+            System.out.print(nums[i]+ "  ");
         }
     }
     }
