@@ -39,3 +39,25 @@ string becomes
 much.very.program.this.like.i
 
 * */
+
+// SUBMITTED TO LEETCODE - 151. Reverse Words in String
+
+
+/*
+Input: s = "a good   example"
+Output: "example good a"
+Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
+* */
+
+/*
+public String reverseWords(String s) {
+        String[] newstring = s.split(" ");
+        s = "";
+        for(int i=newstring.length-1;i>=0;i--){
+            if(newstring[i]!=""){
+                  s = s + newstring[i] + " ";
+            }
+        }
+        return s.trim();
+    }
+* */
