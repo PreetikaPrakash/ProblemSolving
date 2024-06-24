@@ -32,7 +32,7 @@ public class practiceLinearSearch {
                 }
             }
             if(Strtemp==0) {
-                System.out.println("Element not present in array");
+                System.out.println("Element not present in string array");
             }
     }
 }
