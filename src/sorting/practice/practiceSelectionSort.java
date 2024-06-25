@@ -28,3 +28,4 @@ public class practiceSelectionSort {
         System.out.println(Arrays.toString(arr));
     }
 }
+// [2, 5, 8, 10, 18, 20]
