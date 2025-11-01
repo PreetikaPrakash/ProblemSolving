@@ -87,3 +87,6 @@ public class searchingElementinSortedRotatedArray {
         return -1;
     }
 }
+// OUTPUT
+// minimum element is found at index 4
+// Element was found at 2 position
