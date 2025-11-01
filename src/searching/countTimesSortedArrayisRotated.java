@@ -42,3 +42,5 @@ public class countTimesSortedArrayisRotated {
     }
 
 }
+
+// Output : "Sorted array is rotated 4 times"
