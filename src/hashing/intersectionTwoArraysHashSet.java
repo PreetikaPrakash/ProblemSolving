@@ -1,7 +1,5 @@
 package hashing;
-
 import java.util.HashSet;
-
 public class intersectionTwoArraysHashSet {
     public static void main(String args[]){
         int a[] = {10,15,20,15,30,30,5};
